@@ -1,12 +1,13 @@
 import { savenote, deletenote } from "./socket.js";
 
+
 const noteform  = document.querySelector('#noteForm')
 const notelist = document.querySelector('#notes')
 
 const noteIU = note => {
     const div = document.createElement('div')
     div.innerHTML =  `
-        <div>
+        <div class="animate__animated animate__wobble">
          <h1>${note.title} </h1>
         <p>${note.description}</p>
         </div> 
